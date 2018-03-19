@@ -1,0 +1,24 @@
+{
+  "name": "beautySalon",
+  "version": "1.0.0",
+  "description": "Salon website",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.7.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+      "scss": "node-sass --watch scss -o build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aparkinbotswana/beautySalon.git"
+  },
+  "author": "James and Connie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aparkinbotswana/beautySalon/issues"
+  },
+  "homepage": "https://github.com/aparkinbotswana/beautySalon"
+}

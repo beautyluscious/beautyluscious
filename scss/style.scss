@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+@import url('https://fonts.googleapis.com/css?family=Meie+Script');
+// SASS Colours
+$primary: #232323;
+$dark-background: #232323;
+$icon: #762a2b;
+
+// SASS Media Queries
+$mobile-width: 641px;
+$medium-width: 642px;
+
+// SASS Media Mixins
+@mixin small-only {
+  @media only screen and (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media (min-width: #{$medium-width}) {
+    @content;
+  }
+}
+
+body {
+  font-weight: 300;
+}
+
+.button {
+	display: inline-block;
+  margin: 0;
+  padding: 0.75rem 1rem;
+	border: 0;
+	border-radius: 0.2rem;
+	background-color: $dark-background;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 400;
+	font-size: 1rem;
+  line-height: 1.5;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	cursor: pointer;
+	-webkit-appearance: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+.button:hover {
+	opacity: 0.85;
+}
+
+.button-icon {
+	display: inline-block;
+  position: relative;
+  top: -0.1em;
+  vertical-align: middle;
+	margin-right: 0.317rem;
+}
+
+.container {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+}
+
+
+.header {
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin: -.5em -.5em 0;
+  z-index: 1; // To sit above the image.
+
+  @include medium {
+    flex-direction: row;
+  }
+
+  img {
+    width: 180px;
+    padding: 1em;
+
+    @include small-only {
+      padding: 1em;
+    }
+  }
+}
+
+.header-logo {
+  display: flex;
+  padding-left: 1em;
+
+  @include small-only {
+    justify-content: center;
+    padding: 0;
+  }
+}
+
+.header-nav {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+
+  @include small-only {
+    justify-content: space-around;
+  }
+
+  li {
+    justify-content: center;
+  }
+
+  a {
+    color: $primary;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background: inherit;
+    padding: 20px 5px;
+    display: inline-block;
+
+    @include medium {
+      padding: 60px 5px;
+    }
+  }
+}
+
+.site-segment {
+  margin: -0.5em;
+  padding: 1em;
+
+  @include medium {
+    padding: 2em;
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.welcome {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  text-align: center;
+  opacity: 0.9;
+  height: 400px;
+
+  @include medium {
+  }
+
+  h1 {
+    font-size: 2em;
+    font-weight: 300;
+    padding: 1em;
+    text-shadow: 1px 1px 1px rgba(100, 100, 100, 1);
+
+    @include medium {
+      font-size: 4em;
+    }
+  }
+}
+
+.about-us {
+  font-size: 1.4em;
+  font-weight: 300;
+  text-align: center;
+}
+
+.our-services {
+  text-align: center;
+  h2, h2 {
+    font-weight: 300;
+  }
+  img {
+    width: 80px;
+    padding: 1em;
+  }
+}
+
+.footer {
+  background-color: $dark-background;
+  color: #fff;
+}
+#map {height: 400px; width: 100%;}
+#tag-line{font-family: 'Meie Script', cursive;
+color: rgba(200, 200, 200, 1);}

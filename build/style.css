@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400");
+@import url("https://fonts.googleapis.com/css?family=Meie+Script");
+body {
+  font-weight: 300; }
+
+.button {
+  display: inline-block;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  border: 0;
+  border-radius: 0.2rem;
+  background-color: #232323;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -webkit-font-smoothing: antialiased; }
+
+.button:hover {
+  opacity: 0.85; }
+
+.button-icon {
+  display: inline-block;
+  position: relative;
+  top: -0.1em;
+  vertical-align: middle;
+  margin-right: 0.317rem; }
+
+.container {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px; }
+
+.header {
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin: -.5em -.5em 0;
+  z-index: 1; }
+  @media (min-width: 642px) {
+    .header {
+      flex-direction: row; } }
+  .header img {
+    width: 180px;
+    padding: 1em; }
+    @media only screen and (max-width: 641px) {
+      .header img {
+        padding: 1em; } }
+
+.header-logo {
+  display: flex;
+  padding-left: 1em; }
+  @media only screen and (max-width: 641px) {
+    .header-logo {
+      justify-content: center;
+      padding: 0; } }
+
+.header-nav {
+  display: flex;
+  list-style-type: none;
+  padding: 0; }
+  @media only screen and (max-width: 641px) {
+    .header-nav {
+      justify-content: space-around; } }
+  .header-nav li {
+    justify-content: center; }
+  .header-nav a {
+    color: #232323;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background: inherit;
+    padding: 20px 5px;
+    display: inline-block; }
+    @media (min-width: 642px) {
+      .header-nav a {
+        padding: 60px 5px; } }
+
+.site-segment {
+  margin: -0.5em;
+  padding: 1em; }
+  @media (min-width: 642px) {
+    .site-segment {
+      padding: 2em; } }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+.welcome {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  text-align: center;
+  opacity: 0.9;
+  height: 400px; }
+  .welcome h1 {
+    font-size: 2em;
+    font-weight: 300;
+    padding: 1em;
+    text-shadow: 1px 1px 1px #646464; }
+    @media (min-width: 642px) {
+      .welcome h1 {
+        font-size: 4em; } }
+
+.about-us {
+  font-size: 1.4em;
+  font-weight: 300;
+  text-align: center; }
+
+.our-services {
+  text-align: center; }
+  .our-services h2, .our-services h2 {
+    font-weight: 300; }
+  .our-services img {
+    width: 80px;
+    padding: 1em; }
+
+.footer {
+  background-color: #232323;
+  color: #fff; }
+
+#map {
+  height: 400px;
+  width: 100%; }
+
+#tag-line {
+  font-family: 'Meie Script', cursive;
+  color: #c8c8c8; }

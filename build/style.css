@@ -110,6 +110,15 @@ body {
       .welcome h1 {
         font-size: 4em; } }
 
+.buyonline{
+  text-align:center;
+  
+}
+
+.buyonline a{
+    margin:10px;
+  }
+
 .about-us {
   font-size: 1.4em;
   font-weight: 300;
